@@ -1,0 +1,11 @@
+<div class="content">
+  {% set data = require('../_data/googleSheetData.json') %}
+  {% for item in data %}
+    <div class="card">
+      <h2>{{ item.Title }}</h2>
+      <p>{{ item.Description }}</p>
+      <img src="{{ item.Image }}" alt="{{ item.Title }}">
+      <a href="detail/{{ item.Title | slugify }}.html" target="_blank">Learn More</a>
+    </div>
+  {% endfor %}
+</div>

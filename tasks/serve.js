@@ -7,25 +7,20 @@ function browserSyncReload(done) {
   done();
 }
 
+// Serve Task
 function serve() {
-  // eslint-disable-next-line no-unused-expressions
-  browserSync({
+  browserSync.init({
     notify: false,
-    server: 'docs',
-    port: 3000
+    server: 'docs', // Serve files from the `docs` folder
+    port: 3000,
   });
+
   gulp.watch(
     ['src/**/*.html', 'src/**/*.njk', 'src/**/*.json', 'src/_data/**/*.json'],
-    gulp.series('nunjucks', 'bake', browserSyncReload)
+    gulp.series('nunjucks', browserSyncReload)
   );
-  gulp.watch(
-    ['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/**/*.scss'],
-    gulp.series('styles', browserSyncReload)
-  );
-  gulp.watch(
-    ['src/js/**/*.js'],
-    gulp.series('lint', 'scripts', browserSyncReload)
-  );
+  gulp.watch(['src/scss/**/*.scss'], gulp.series('styles', browserSyncReload));
+  gulp.watch(['src/js/**/*.js'], gulp.series('scripts', browserSyncReload));
   gulp.watch(['src/img/**/*'], gulp.series('images', browserSyncReload));
 }
 

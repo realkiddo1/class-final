@@ -1,0 +1,26 @@
+[
+  {
+    "Title": "Lemonade",
+    "Description": "Beyoncé's critically acclaimed visual album exploring themes of love, betrayal, and identity.",
+    "Image URL": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Beyonce_-_Lemonade_%28Official_Album_Cover%29.png/220px-Beyonce_-_Lemonade_%28Official_Album_Cover%29.png",
+    "Link": "https://en.wikipedia.org/wiki/Lemonade_(Beyonc%C3%A9_album)"
+  },
+  {
+    "Title": "To Pimp a Butterfly",
+    "Description": "Kendrick Lamar's groundbreaking album blending hip-hop, jazz, and soul to address systemic racism and personal struggles.",
+    "Image URL": "https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png",
+    "Link": "https://en.wikipedia.org/wiki/To_Pimp_a_Butterfly"
+  },
+  {
+    "Title": "Parasite",
+    "Description": "A South Korean thriller about class divisions, deception, and unexpected consequences.",
+    "Image URL": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Parasite_%282019_film%29.png/220px-Parasite_%282019_film%29.png",
+    "Link": "https://en.wikipedia.org/wiki/Parasite_(2019_film)"
+  },
+  {
+    "Title": "Everything Everywhere All at Once",
+    "Description": "A chaotic, heartfelt, and visually stunning multiverse adventure about family and identity.",
+    "Image URL": "https://upload.wikimedia.org/wikipedia/en/1/1e/Everything_Everywhere_All_at_Once.jpg",
+    "Link": "https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once"
+  }
+]
